@@ -8,27 +8,23 @@
 }
 
 :root {
-    --bg-color: darkblue;
+    --bg-color: #28a99e;
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 15px 0 40px;
+    padding: 0 40px 0 40px;
     border-bottom: 1px solid;
-    box-shadow: ;
 }
 
 nav ul li{
     display: inline-block;
-    padding: 0 20px;
 }
 
 nav ul li a {
     color: black;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 nav ul li a:hover{
@@ -36,40 +32,102 @@ nav ul li a:hover{
     text-decoration: underline;
 }
 
-button{
-    border: none;
-    padding: 10px 10px;
-    font-weight: bold;
+.main{
+    display: flex;;
+    align-items: center;
+}
+
+.main a{
+    margin-right: 20px;
+    margin-left: 10px;
     color: black;
-    background-color: transparent;
-    cursor: pointer;
+    font-weight: bold;
+}   
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user i{
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.main a:hover{
+    color:  var(--bg-color);
 }
 
 #user_signup{
     border: 1px solid;
     transition: .4s;
+    font-weight: bold;
+    padding: 10px;
+    background-color: transparent;
 }
-
-#user_login:hover{
-    transform: scale(1.2);
-    color: var(--bg-color);
-}
-
 #user_signup:hover{
-    transform: scale(1.2);
-    background-color: teal;
+    background-color: #037c6e;
+    transition: .3s;
+    color: white;
+    cursor: pointer;
 }
 
 .navbar-logo {
     box-sizing: border-box;
-    object-fit: fill;
-    width: 140px;
-    height: 70px;
+    object-fit: cover;
+    width: 120px;
+    height: 50px;
 }
 
 #a_logo{
+    margin-top: 10px;
+}
+
+.container{
+    width: 700px;
     height: 70px;
-    width: 140px;
+    display: flex;
+    align-items: center;
+}
+.container form{
+    display: flex;
+}
+.container form input{
+    width: 480px;
+    height: 40px;
+    outline: none;
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+.container form button{
+    background-color: #28a99e;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.container form button:hover{
+    transition: .5s;
+    background-color: #037c6e;
+    cursor: pointer;
+}
+
+.container form button i{
+    align-self: center;
+    font-size: 20px;
+}
+
+.container span{
+    padding-right: 30px;
+}
+.container span:hover{
+    color: var(--bg-color);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .main_body{
